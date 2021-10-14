@@ -14,6 +14,13 @@ $product = new Product($db);
 // read products will be here
 // query products
 
+$result = $product->delete();
+echo $result;
 
 
 ?>
+
+<form action="http://localhost/leerjaar%202/periode%201/php/opdracht3/product/delete.php" method="post">
+    <input type="number" name="ID" id="ID" placeholder="ID" required>
+    <input type="submit" value="Verzenden">
+</form>

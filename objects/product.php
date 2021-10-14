@@ -46,7 +46,7 @@ class Product
    public function delete()
    {
        // select all query
-       $queryDelete = "DELETE FROM " . $this->table_name;
+       $queryDelete = "DELETE FROM " . $this->table_name . " WHERE id = 1" ;
        $resultDelete = $this->conn->query($queryDelete);
        return $resultDelete;
    }
